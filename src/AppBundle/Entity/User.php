@@ -48,6 +48,17 @@ class User extends BaseUser
     {
         $this->firstName = $firstName;
     }
-
+    
+    /**
+     * Overridden so that username is now optional
+     *
+     * @param string $email
+     * @return User
+     */
+    public function setEmail($email)
+    {
+        $this->setUsername($email);
+        return parent::setEmail($email);
+    }
 }
 
