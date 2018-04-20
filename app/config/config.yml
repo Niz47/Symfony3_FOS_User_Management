@@ -76,3 +76,6 @@ fos_user:
     from_email:
         address: "mail4test1991@gmail.com"
         sender_name: "Admin Postman"
+    registration:
+        form:
+            type: AppBundle\Form\RegistrationFormType
